@@ -145,7 +145,7 @@ h5::after {
 .site-header.fixed .menu a { color: #333; }
 .site-header.fixed .menu a:hover { color: #3dc9b3; }
 .site-header.fixed .logo a { color: #3dc9b3; }
-.menu-title, .menu-copy { display: none; }
+.menu .menu-title, .menu .menu-copy { display: none; }
 .menu-title {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -427,7 +427,7 @@ ul.social-buttons li {
 		display: block;
 		margin-top: 30px;
 	}
-	.menu-title, .menu-copy { display: block; }
+	.menu .menu-title, .menu .menu-copy { display: block; }
 	.menu a { font-size: 18px; }
 }
 @media only screen and (max-width: 400px) {
