@@ -273,6 +273,7 @@ h5::after {
 	color: #fff;
 	float: left;
 	cursor: pointer;
+	background-color: #bbe8eb;
 }
 .imgoverlay .overlay {
 	width: 100%;
@@ -321,6 +322,7 @@ h5::after {
 	letter-spacing: .1em;
 	font-weight: 300;
 }
+.overlayinfo a { color: #fff; }
 .imgoverlay:hover .overlay {
 	opacity: 1;
 	filter: alpha(opacity=100);
