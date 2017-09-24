@@ -117,10 +117,11 @@ h5::after {
 }
 .logo { float: left; }
 .logo a {
-	color: #fff;
-	border: 2px solid;
+	background-color: #fff;
 	border-radius: 50%;
+	color: #333;
 	padding: 5px 20px;
+	letter-spacing: -2px;
 }
 .nav-primary { float: right; }
 .menu .menu-item {
@@ -145,7 +146,10 @@ h5::after {
 }
 .site-header.fixed .menu a { color: #333; }
 .site-header.fixed .menu a:hover { color: #3dc9b3; }
-.site-header.fixed .logo a { color: #3dc9b3; }
+.site-header.fixed .logo a {
+	background-color: #333;
+	color: #fff;
+}
 .menu .menu-title, .menu .menu-copy { display: none; }
 .menu-title {
 	font-size: 30px;
@@ -183,15 +187,14 @@ h5::after {
 	opacity: 0.1;
 }
 #home h2 {
-	font-size: 60px;
+	font-size: 50px;
 	padding-top: 150px;
 }
 #home h4 {
-	font-size: 28px;
+	font-size: 40px;
 	text-transform: uppercase;
-	color: #3dc9b3;
+	color: #fff;
 	margin-bottom: 120px;
-	font-weight: bold;
 }
 #home p {
 	color: #fff;
@@ -256,20 +259,20 @@ h5::after {
 }
 .content {
 	float: right;
-	text-align: left;
+	text-align: justify !important;
 	width: 60%;
 }
 /* work */
 #portfolio .fa {
-	font-size: 100px;
-	line-height: 233px;
+	font-size: 80px;
+	line-height: 180px;
 }
 .imgoverlay {
 	position: relative;
 	overflow: hidden;
 	display: block;
 	width: 33.15%;
-	height: 233px;
+	height: 180px;
 	color: #fff;
 	float: left;
 	cursor: pointer;
@@ -309,7 +312,7 @@ h5::after {
 	text-align: center;
 	display: block;
 	position: absolute;
-	top: 30%;
+	top: 25%;
 	left: 0;
 	-webkit-transition: top .3s ease;
 	-moz-transition: top .3s ease;
@@ -329,7 +332,7 @@ h5::after {
 	filter: alpha(opacity=100);
 	-ms-filter: "alpha(Opacity=100)";
 }
-.imgoverlay:hover .overlayinfo { top: 35%; }
+.imgoverlay:hover .overlayinfo { top: 30%; }
 /* contact */
 .light-box {
 	background-color: #fff;
@@ -397,7 +400,6 @@ ul.social-buttons li {
 .site-footer p {
 	color: #fff;
 	font-size: 13px;
-	font-weight: bold;
 	text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) {
@@ -408,7 +410,7 @@ ul.social-buttons li {
 	.subtitle { font-size: 20px; margin-bottom: 40px; }
 	.section-padding { padding: 60px 0; }
 	.image, .content { text-align: center; }
-	.image .fa { font-size: 10em; }
+	.image .fa { font-size: 5em; }
 	.imgoverlay { height: auto; }
 	h1 { font-size: 1.5em; }
 	.site-header { height: 60px; }
@@ -418,8 +420,8 @@ ul.social-buttons li {
 		bottom: -150px;
 	}
 	#home h2 {
-		font-size: 40px;
-		padding-top: 95px;
+		font-size: 33px;
+		padding-top: 70px;
 	}
 	#home h4 {
 		font-size: 25px;
@@ -455,8 +457,11 @@ ul.social-buttons li {
 		bottom: -80px;
 	}
 	#home h2 {
-		font-size: 45px;
+		font-size: 34px;
 		padding-top: 140px;
 	}
-	#home h4 { margin-bottom: 80px; }
+	#home h4 {
+		font-size: 17px;
+		margin-bottom: 80px;
+	}
 }
