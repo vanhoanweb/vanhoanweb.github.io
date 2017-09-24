@@ -3,7 +3,7 @@
 	$(".responsive-menu-icon").click(function() {
 		$(this).next(".nav-primary .menu").toggle();
 		$(this).toggleClass("btn-close");
-		$('.overlay').toggleClass('show');
+		$('.overlay-bg').toggleClass('show');
 	});
 
 	$(window).resize(function() {
@@ -32,6 +32,11 @@
 			scrollTop: $($anchor.attr('href')).offset().top
 		}, 1500, 'easeInOutExpo');
 		event.preventDefault();
+		if (isMobile.matches) {
+			$('.overlay-bg').removeClass('show');
+			$('.responsive-menu').hide();
+			$(".responsive-menu-icon").toggleClass("btn-close");
+		}
 	});
 
 	/* Menu bar fixed on top when scrolled */
