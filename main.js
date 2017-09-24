@@ -29,7 +29,7 @@
 	$('nav a, #home a').bind('click', function(event) {
 		var $anchor = $(this);
 		$('html, body').stop().animate({
-			scrollTop: $($anchor.attr('href')).offset().top
+			scrollTop: $($anchor.attr('href')).offset().top - 75
 		}, 1500, 'easeInOutExpo');
 		event.preventDefault();
 		if (isMobile.matches) {
